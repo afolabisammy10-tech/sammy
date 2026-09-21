@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sammy.com | Modern essentials</title>
+<link rel="stylesheet" href="sammy-business.css">
+</head>
+<body>
+<div class="loading-screen" id="loadingScreen" aria-live="polite" aria-label="Loading store">
+  <div class="loading-screen-inner">
+    <div class="spinner" aria-hidden="true"></div>
+    <div class="loading-copy">
+      <span>sammy.com</span>
+      <strong id="loadingMessage">Preparing the collection</strong>
+      <div class="loading-progress" aria-hidden="true"><span id="loadingProgress"></span></div>
+    </div>
+  </div>
+</div>
+<div class="announcement">Open for collaborations <span>·</span> Custom orders <span>·</span> Styling for homes, brands, and everyday life</div>
+<div class="welcome-marquee" aria-label="Welcome message for new customers">
+  <div class="marquee-track">
+    <span>Welcome, new customer — we’re glad you found us.</span>
+    <span>Need styling help or a custom request? We’re happy to help.</span>
+    <span>First-time shoppers can message us for a warm, personal welcome.</span>
+  </div>
+</div>
+<header class="header">
+  <div class="container nav">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="brand" href="#home">sammy<hi
+      span>.</span>com</a>
+    <nav id="mainNav"><a href="#shop">Shop</a><a href="about.html">The story</a><a href="#journal">Journal</a><a href="faq.html">FAQ</a><a href="#contact">Contact</a></nav>
+    <div class="nav-actions"><button class="icon-button" id="searchToggle" aria-label="Search">⌕</button><button class="bag-button" id="bagOpen" aria-label="Open shopping bag">Bag <b id="bagCount">0</b></button></div>
+  </div>
+</header>
+<div class="search-panel" id="searchPanel" aria-hidden="true"><div class="container search-inner"><label for="siteSearch">Search the collection</label><div class="search-field"><input id="siteSearch" type="search" placeholder="Try shirt, laptop, tote..." autocomplete="off"><button id="searchClose" type="button" aria-label="Close search">×</button></div><p id="searchStatus">15 pieces in the collection</p></div></div>
+<main>
+  <section class="hero" id="home"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">Collection 01 / 2026</p><h1>Quiet clothes.<br><em>Strong presence.</em></h1><p>Thoughtful everyday pieces, tailored with intention and designed for real life. We create quiet luxury for personal wardrobes, homes, and brand experiences — and we are always open to collaborations, styling requests, and custom commissions.</p><div class="hero-actions"><a class="button dark" href="#shop">Explore the collection <span>↓</span></a><a class="under-link" href="#contact">Let’s create together <span>↗</span></a></div></div><div class="hero-visual"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1400&q=90" alt="Model wearing a modern neutral outfit"><div class="hero-stamp"><span>SM</span><small>made slowly<br>in Lagos</small></div><div class="hero-caption">Look 01 / Soft structure</div></div></div></section>
+
+  <section class="manifesto"><div class="container manifesto-inner"><p class="eyebrow">The sammy standard</p><h2>Good clothes do not need to<br><em>shout to be remembered.</em></h2><div class="manifesto-meta"><span>Natural fibres</span><span>Small batches</span><span>Considered details</span></div></div></section>
+
+  <section class="experience section"><div class="container"><div class="section-head"><div><p class="eyebrow">A quieter luxury</p><h2>Made for people who<br><em>notice the details.</em></h2></div><p class="section-note">Everything we create is meant to feel elevated, useful, and personal from the first impression to the final unboxing.</p></div><div class="experience-grid"><article class="experience-card"><span class="experience-number">01</span><h3>Small-batch design</h3><p>We work in limited runs so every piece feels intentional, rare, and worth keeping.</p></article><article class="experience-card accent"><span class="experience-number">02</span><h3>Private styling help</h3><p>Need direction? Our team helps with fit, pairing, and custom requests before checkout.</p></article><article class="experience-card"><span class="experience-number">03</span><h3>Fast warm support</h3><p>From order questions to delivery updates, every customer gets a thoughtful experience.</p></article></div><div class="testimonial-row"><blockquote>“It feels premium without being loud. Every detail feels designed for real life.”</blockquote><blockquote>“This is the first store I’ve shopped where I actually wanted to stay and browse.”</blockquote><blockquote>“The quality and the service together made it feel like a luxury experience.”</blockquote></div></div></section>
+
+  <section class="shop section" id="shop"><div class="container"><div class="section-head"><div><p class="eyebrow">The collection</p><h2>Pieces with<br><em>room to live.</em></h2></div><p class="section-note">Designed to move between the hours of your life. Filter the edit, open a piece, and add what feels like you.</p></div><div class="shop-toolbar"><div class="filters" role="group" aria-label="Filter products"><button class="filter active" data-filter="all">All pieces</button><button class="filter" data-filter="new">New in</button><button class="filter" data-filter="tops">Tops</button><button class="filter" data-filter="bottoms">Bottoms</button><button class="filter" data-filter="accessories">Accessories</button><button class="filter" data-filter="tech">Tech</button></div><span class="result-count" id="resultCount">15 pieces</span></div><div class="featured-row" aria-label="Featured products"><article class="featured-item"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Featured soft knit top"><div class="feature-copy"><span>Featured</span><h3>The Air Shirt</h3><p>Our most loved all-day layer for easy structure and effortless styling.</p></div></article><article class="featured-item"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85" alt="Featured relaxed trouser"><div class="feature-copy"><span>Best seller</span><h3>The Wide Trouser</h3><p>Soft movement, tailored lines, and a silhouette that feels quietly premium.</p></div></article><article class="featured-item"><img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=900&q=85" alt="Featured leather tote"><div class="feature-copy"><span>Studio pick</span><h3>The Carry Tote</h3><p>Compact, polished, and made for the everyday rhythm between work and home.</p></div></article></div><div class="product-grid" id="productGrid"></div><button class="see-more" id="seeMoreProducts" type="button">See more products</button></div></section>
+
+  <section class="editorial-banner"><div class="container editorial-banner-inner"><div class="editorial-copy"><p class="eyebrow">Style your week</p><h2>From easy mornings<br><em>to elevated evenings.</em></h2></div><div class="editorial-pills"><span>Minimal tailoring</span><span>Soft structure</span><span>Custom styling</span><span>Gift-ready edits</span></div></div></section>
+
+  <section class="promo-video"><div class="container promo-wrap"><div class="promo-visual promo-reel" id="promoReel" aria-label="Sammy store video advertisement"><div class="reel-frame active"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85" alt="Model wearing a Sammy store look" loading="lazy"><div class="reel-caption"><span>Scene 01 / The arrival</span><strong>Wear the moment.</strong></div></div><div class="reel-frame"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Sammy store styling detail" loading="lazy"><div class="reel-caption"><span>Scene 02 / The detail</span><strong>Made to be noticed.</strong></div></div><div class="reel-frame"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85" alt="Sammy store collection rail" loading="lazy"><div class="reel-caption"><span>Scene 03 / The edit</span><strong>Keep what feels like you.</strong></div></div><span class="promo-badge">Limited time</span><div class="reel-controls"><button class="promo-play" id="promoPlay" type="button" aria-label="Pause store advertisement">Ⅱ</button><span class="reel-progress"><i id="reelProgress"></i></span><span class="reel-time" id="reelTime">01 / 03</span></div></div><div class="promo-copy"><p class="eyebrow">This week only</p><h2>Quiet luxury, <em>made for the moment.</em></h2><p>See the newest drop, the custom styling experience, and the little details that make every piece feel personal. This limited-time campaign is our way of welcoming new customers and rewarding first-time shoppers.</p><div class="promo-meta"><div><strong id="promoCountdown">48h</strong><span>Only this weekend</span></div><div><strong>15%</strong><span>First-order offer</span></div></div><div class="promo-actions"><a class="button dark" href="#shop">Shop the drop</a><a class="under-link" href="#contact">Book styling help</a></div></div></div></section>
+
+  <section class="premium-plan"><div class="container premium-wrap"><div class="premium-intro"><p class="eyebrow">Premium access</p><h2>Choose a <em>no-ads</em> experience.</h2><p>For customers who want a cleaner, calmer browsing experience, we offer a premium option that removes promotional interruptions after payment is confirmed by the studio.</p></div><div class="plan-grid"><article class="plan-card"><span class="plan-label">Starter</span><h3>N20,000</h3><p>Monthly support plan</p><ul><li>Priority styling replies</li><li>Early access to drops</li><li>Weekly shop updates</li></ul><a href="#contact" class="under-link">Choose starter</a></article><article class="plan-card featured"><span class="plan-label">Best value</span><h3>N50,000</h3><p>Premium no-ads plan</p><ul><li>No promotional interruptions</li><li>Ad-free browsing</li><li>Private styling concierge</li></ul><div class="payment-box"><span>Pay via Opay</span><strong id="opayAccount">911362935</strong><button type="button" id="copyOpay" class="copy-account">Copy account</button></div><a href="https://wa.me/2349114362935?text=Hi%20sammy.com%2C%20I%20have%20paid%20N50%2C000%20to%20Opay%20account%20911362935%20for%20the%20premium%20no-ads%20plan.%20I%20will%20send%20my%20payment%20receipt%20here." target="_blank" rel="noopener noreferrer" class="button dark">Send payment proof</a></article><article class="plan-card"><span class="plan-label">Studio</span><h3>N150,000</h3><p>Private styling membership</p><ul><li>Custom wardrobe plan</li><li>Priority delivery</li><li>Brand styling support</li></ul><a href="#contact" class="under-link">Talk to studio</a></article></div></div></section>
+
+  <section class="service-spotlight"><div class="container"><div class="service-grid"><article class="service-card"><span class="service-icon">01</span><h3>Styling consults</h3><p>Get a smart outfit edit for your wardrobe, your brand, or your next event.</p></article><article class="service-card accent"><span class="service-icon">02</span><h3>Custom orders</h3><p>Request a tailored finish, a personal colour story, or a thoughtful gift edit.</p></article><article class="service-card"><span class="service-icon">03</span><h3>Fast warm support</h3><p>We guide you gently from first click to final delivery with care and clarity.</p></article></div></div></section>
+
+  <section class="story section" id="story"><div class="container story-grid"><div class="story-image"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1200&q=85" alt="Clothing rail in a minimal studio" loading="lazy"><span>01 / material study</span></div><div class="story-copy"><p class="eyebrow">Less, but better</p><h2>Made for the<br><em>long way around.</em></h2><p>sammy.com began with a simple question: what would we wear if we bought less, chose better, and let our clothes become part of our story?</p><p>Our answer is a focused wardrobe of useful shapes, tactile fabrics, and small details that reward a closer look. No loud logos. No rushed drops.</p><a class="under-link" href="#contact">Read our approach <span>↗</span></a></div></div></section>
+
+  <section class="journal section" id="journal"><div class="container"><div class="section-head"><div><p class="eyebrow">From the journal</p><h2>Notes on <em>wearing well.</em></h2></div><a class="under-link" href="#journal">View all notes <span>↗</span></a></div><div class="journal-grid"><article><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Neutral fashion styling" loading="lazy"><p>01 / Style guide</p><h3>Three ways to make one shirt feel new.</h3></article><article><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85" alt="Textured fabric detail" loading="lazy"><p>02 / Materials</p><h3>Why we choose cloth you can feel.</h3></article><article><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85" alt="Clothing details on a rack" loading="lazy"><p>03 / Care</p><h3>The slower wardrobe starts at home.</h3></article></div></div></section>
+
+  <section class="contact" id="contact"><div class="container contact-inner"><div><p class="eyebrow">Need a hand?</p><h2>Come say<br><em>hello.</em></h2><p>Questions about sizing, fit, delivery, or your order? We are one message away.</p></div><a class="whatsapp-cta" href="https://wa.me/2349114362935?text=Hi%20sammy.com%2C%20I%20need%20help%20with%20an%20order." target="_blank" rel="noopener noreferrer"><span class="wa-mark">wa</span><span><small>Fastest response</small>WhatsApp the studio <b>↗</b></span></a></div></section>
+</main>
+<footer><div class="container footer-grid"><a class="brand" href="#home">sammy<span>.</span>com</a><p>Modern essentials / Lagos, Nigeria</p><div><a href="#shop">Shop</a><a href="#story">Story</a><a href="#contact">Contact</a></div></div></footer>
+<div class="modal-backdrop" id="modal"><div class="quick-modal" role="dialog" aria-modal="true" aria-labelledby="modalName"><button class="modal-close" id="modalClose" aria-label="Close">×</button><img id="modalImage" src="" alt=""><div class="modal-copy"><p class="eyebrow">A considered piece</p><h2 id="modalName"></h2><p>Made in small batches with a relaxed fit and materials chosen to age well. Select your preferred size, then add it to your bag.</p><label for="modalSize" id="modalSizeLabel">Select size</label><select id="modalSize"><option>S / Small</option><option>M / Medium</option><option>L / Large</option><option>XL / Extra large</option></select><strong id="modalPrice"></strong><button class="button dark add-modal">Add to bag <span>+</span></button></div></div></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="cart-head"><h2>Your bag</h2><button id="bagClose" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is waiting for something good.</p></div><div class="cart-foot"><div><span>Subtotal</span><strong id="cartTotal">N0</strong></div><button class="whatsapp-checkout" id="checkout">Checkout on WhatsApp ↗</button></div></aside><div class="toast" id="toast">Added to your bag</div>
+<div class="interrupt-ad" id="interruptAd" aria-live="assertive" aria-label="Store advertisement">
+  <div class="interrupt-ad-inner">
+    <button class="interrupt-close" id="interruptClose" type="button" aria-label="Close ad">×</button>
+    <span class="interrupt-tag">Premium member invitation</span>
+    <div class="interrupt-reel" aria-label="Playing store advertisement"><img id="interruptReelImage" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Sammy store campaign scene"><span id="interruptReelScene">Scene 01 / The arrival</span></div>
+    <h2>Enter the private edit.</h2>
+    <p>Fresh pieces are live now. Get up to 15% off your first order and enjoy private styling support before the collection sells out.</p>
+    <div class="interrupt-offer"><strong>15% OFF</strong><span>Ends in 48 hours · 12 passes left</span></div>
+    <div class="interrupt-premium"><div><span>Premium Member Pass</span><strong>N50,000 / private access</strong><small>Pay Opay: 911362935</small><small class="interrupt-perks">No ads · private drops · wardrobe edits · priority concierge</small></div><a href="https://wa.me/2349114362935?text=Hi%20sammy.com%2C%20I%20have%20paid%20N50%2C000%20to%20Opay%20account%20911362935%20for%20the%20premium%20no-ads%20plan.%20I%20will%20send%20my%20payment%20receipt%20here." target="_blank" rel="noopener noreferrer" class="interrupt-premium-link">Unlock my pass</a></div>
+    <div class="interrupt-actions">
+      <a class="button dark" href="#shop">Shop now</a>
+      <button class="interrupt-spin" id="interruptSpin" type="button">Reveal welcome offer</button>
+      <button class="interrupt-dismiss" id="interruptDismiss" type="button">No thanks</button>
+    </div>
+  </div>
+</div>
+<script>
+const loadingScreen = document.getElementById('loadingScreen');
+const loadingMessage = document.getElementById('loadingMessage');
+const loadingProgress = document.getElementById('loadingProgress');
+const loadingMessages = ['Preparing the collection', 'Checking fresh arrivals', 'Setting the details', 'Almost ready'];
+const loadingStarted = performance.now();
+const minimumLoadingTime = 10000;
+let pageLoaded = document.readyState === 'complete';
+let loadingFinished = false;
+const finishLoading = () => {
+  if (loadingFinished || !pageLoaded) return;
+  const elapsed = performance.now() - loadingStarted;
+  if (elapsed < minimumLoadingTime) {
+    setTimeout(finishLoading, minimumLoadingTime - elapsed);
+    return;
+  }
+  loadingFinished = true;
+  loadingScreen.classList.add('hidden');
+  document.body.classList.add('loaded');
+};
+window.addEventListener('load', () => { pageLoaded = true; finishLoading(); });
+const loadingTicker = setInterval(() => {
+  const elapsed = Math.min(performance.now() - loadingStarted, minimumLoadingTime);
+  const stage = Math.min(Math.floor(elapsed / 2500), loadingMessages.length - 1);
+  loadingMessage.textContent = loadingMessages[stage];
+  loadingProgress.style.width = `${(elapsed / minimumLoadingTime) * 100}%`;
+  if (loadingFinished) clearInterval(loadingTicker);
+}, 100);
+
+const getProducts = () => [...document.querySelectorAll('.product')];
+const modal = document.querySelector('#modal'); const bag = document.querySelector('#cartDrawer'); const cart = [];
+const money = value => `N${Number(value).toLocaleString('en-NG')}`;
+const updateBag = () => { document.querySelector('#bagCount').textContent = cart.length; document.querySelector('#cartTotal').textContent = money(cart.reduce((sum, item) => sum + Number(item.price), 0)); document.querySelector('#cartItems').innerHTML = cart.length ? cart.map((item,index) => `<div class="cart-item"><img src="${item.image}" alt=""><div><strong>${item.name}</strong><span>${item.size}</span><b>${money(item.price)}</b></div><button data-remove="${index}" aria-label="Remove ${item.name}">×</button></div>`).join('') : '<p class="empty-cart">Your bag is waiting for something good.</p>'; };
+const showProduct = product => { const isTech = product.dataset.category.includes('tech') || product.dataset.category.includes('devices'); const sizeLabel = document.querySelector('#modalSizeLabel'); const sizeSelect = document.querySelector('#modalSize'); if (isTech) { sizeLabel.textContent = 'Choose colour'; sizeSelect.innerHTML = '<option>Silver</option><option>Black</option><option>Space Gray</option><option>Blue</option>'; } else { sizeLabel.textContent = 'Select size'; sizeSelect.innerHTML = '<option>S / Small</option><option>M / Medium</option><option>L / Large</option><option>XL / Extra large</option>'; } modal.dataset.name = product.dataset.name; modal.dataset.price = product.dataset.price; modal.dataset.image = product.dataset.image; document.querySelector('#modalImage').src = product.dataset.image; document.querySelector('#modalImage').alt = product.dataset.name; document.querySelector('#modalName').textContent = product.dataset.name; document.querySelector('#modalPrice').textContent = money(product.dataset.price); modal.classList.add('open'); };
+let activeFilter = 'all';
+let searchTerm = '';
+let visibleCount = 12;
+let savedOnly = false;
+let savedIds = new Set(JSON.parse(localStorage.getItem('sammySavedProducts') || '[]'));
+const seeMoreButton = document.querySelector('#seeMoreProducts');
+const savedToggle = document.createElement('button');
+savedToggle.className = 'filter saved-filter';
+savedToggle.type = 'button';
+savedToggle.innerHTML = 'Saved edit <b>0</b>';
+document.querySelector('.filters').append(savedToggle);
+const kidsProducts = [
+  { name: 'The Little Day Shirt', detail: 'Soft cotton · Cloud', price: 18000, image: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Mini Utility Set', detail: 'Cotton twill · Moss', price: 26000, image: 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Weekend Overall', detail: 'Light denim · Blue', price: 32000, image: 'https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Tiny Knit', detail: 'Soft knit · Oat', price: 22000, image: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Playday Sneaker', detail: 'Canvas · Natural', price: 28000, image: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Mini Carry Bag', detail: 'Canvas · Terracotta', price: 16000, image: 'https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Little Lounge Set', detail: 'Jersey cotton · Rose', price: 24000, image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Small Rain Jacket', detail: 'Lightweight shell · Yellow', price: 30000, image: 'https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Pocket Cap', detail: 'Cotton canvas · Blue', price: 12000, image: 'https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&w=700&q=85' }
+];
+const kidsSection = document.createElement('section');
+kidsSection.className = 'kids-products';
+kidsSection.innerHTML = '<div class="container"><div class="kids-products-head"><div><p class="eyebrow">For little people</p><h2>The kids <em>edit.</em></h2><p>Comfortable, playful pieces made for small adventures and big days.</p></div><span>09 pieces / soft essentials</span></div><div class="kids-product-grid"></div></div>';
+document.querySelector('#shop').after(kidsSection);
+const kidsGrid = kidsSection.querySelector('.kids-product-grid');
+kidsProducts.forEach((item, index) => {
+  const card = document.createElement('article');
+  card.className = 'product kids-product';
+  card.dataset.name = item.name;
+  card.dataset.price = String(item.price);
+  card.dataset.image = item.image;
+  card.dataset.category = 'kids';
+  card.innerHTML = `<div class="product-image"><img src="${item.image}" alt="${item.name}" loading="lazy"><span class="product-tag">Kids</span><button class="quick-view" type="button">Quick view</button></div><div class="product-info"><div><h3>${item.name}</h3><p>${item.detail}</p></div><strong>N${item.price.toLocaleString('en-NG')}</strong></div>`;
+  kidsGrid.append(card);
+  card.addEventListener('click', event => { if (event.target.classList.contains('quick-view') || event.currentTarget) showProduct(card); });
+});
+const essentialsProducts = [
+  { name: 'The Everyday Brief', detail: 'Soft cotton stretch · Neutral', price: 12000, image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Daily Boxer', detail: 'Breathable cotton · Black', price: 15000, image: 'https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Comfort Boxer Set', detail: 'Three-piece cotton · Mixed', price: 36000, image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=85' },
+  { name: 'The Protection Pack', detail: 'Personal care · 18+', price: 8000, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2b7?auto=format&fit=crop&w=700&q=85' }
+];
+const essentialsSection = document.createElement('section');
+essentialsSection.className = 'essentials-products';
+essentialsSection.innerHTML = '<div class="container"><div class="essentials-head"><div><p class="eyebrow">Adults / private essentials</p><h2>Comfort for <em>every day.</em></h2><p>Underlayers and personal care, kept separate and discreet.</p></div><span>18+ protection products</span></div><div class="essentials-grid"></div></div>';
+kidsSection.after(essentialsSection);
+const essentialsGrid = essentialsSection.querySelector('.essentials-grid');
+essentialsProducts.forEach(item => {
+  const card = document.createElement('article');
+  card.className = 'product essentials-product';
+  card.dataset.name = item.name;
+  card.dataset.price = String(item.price);
+  card.dataset.image = item.image;
+  card.dataset.category = 'essentials';
+  card.innerHTML = `<div class="product-image"><img src="${item.image}" alt="${item.name}" loading="lazy"><span class="product-tag">Adults</span><button class="quick-view" type="button">Quick view</button></div><div class="product-info"><div><h3>${item.name}</h3><p>${item.detail}</p></div><strong>N${item.price.toLocaleString('en-NG')}</strong></div>`;
+  essentialsGrid.append(card);
+  card.addEventListener('click', event => { if (event.target.classList.contains('quick-view') || event.currentTarget) showProduct(card); });
+});
+document.querySelector('#shop').insertAdjacentHTML('afterend', '<section class="style-quiz" id="styleQuiz"><div class="container"><div class="quiz-shell"><div class="quiz-intro"><p class="eyebrow">Find your edit</p><h2>A little direction.<br><em>A better wardrobe.</em></h2><p>Answer three quick questions and we will point you toward the pieces that fit your day.</p><div class="quiz-progress"><i id="quizProgress"></i></div></div><div class="quiz-panel"><div class="quiz-step active" data-step="0"><span>01 / 03</span><h3>What are you dressing for?</h3><div class="quiz-options"><button type="button" data-answer="everyday">Everyday ease</button><button type="button" data-answer="work">Work and movement</button><button type="button" data-answer="occasion">A considered occasion</button></div></div><div class="quiz-step" data-step="1"><span>02 / 03</span><h3>How should it feel?</h3><div class="quiz-options"><button type="button" data-answer="relaxed">Relaxed and soft</button><button type="button" data-answer="tailored">Clean and tailored</button><button type="button" data-answer="expressive">A little expressive</button></div></div><div class="quiz-step" data-step="2"><span>03 / 03</span><h3>What would you like more of?</h3><div class="quiz-options"><button type="button" data-answer="tops">Tops and layers</button><button type="button" data-answer="bottoms">Trousers and bottoms</button><button type="button" data-answer="accessories">Finishing pieces</button></div></div><div class="quiz-result" id="quizResult"><span>Your edit is ready</span><h3 id="quizResultTitle"></h3><p id="quizResultCopy"></p><button class="button dark" id="quizShop" type="button">Shop my edit</button></div></div></div></div></section>');
+document.querySelector('.premium-plan').insertAdjacentHTML('afterend', '<section class="premium-benefits"><div class="container"><div class="premium-benefits-head"><div><p class="eyebrow">Inside the membership</p><h2>More than <em>no ads.</em></h2></div><p>Premium is a quieter way to shop, with thoughtful access and personal support built around your wardrobe.</p></div><div class="premium-benefits-grid"><article><span>01</span><h3>Private drop room</h3><p>See selected new pieces before the public collection opens.</p></article><article><span>02</span><h3>Wardrobe edit</h3><p>Receive a personal monthly shortlist built around your style and needs.</p></article><article><span>03</span><h3>Priority concierge</h3><p>Get first access to sizing help, custom requests, and order updates.</p></article><article><span>04</span><h3>Member pricing</h3><p>Enjoy selected private offers reserved for the premium circle.</p></article></div><a class="premium-concierge" href="https://wa.me/2349114362935?text=Hi%20sammy.com%2C%20I%20am%20interested%20in%20the%20premium%20member%20benefits." target="_blank" rel="noopener noreferrer">Ask the premium concierge <span>↗</span></a></div></section>');
+const quizSteps = [...document.querySelectorAll('.quiz-step')];
+const quizProgress = document.querySelector('#quizProgress');
+const quizResult = document.querySelector('#quizResult');
+const quizAnswers = [];
+let quizCategory = 'tops';
+document.querySelectorAll('.quiz-options button').forEach(button => button.addEventListener('click', () => {
+  const step = Number(button.closest('.quiz-step').dataset.step);
+  quizAnswers[step] = button.dataset.answer;
+  quizSteps[step].classList.remove('active');
+  if (step < quizSteps.length - 1) {
+    quizSteps[step + 1].classList.add('active');
+    quizProgress.style.width = `${((step + 2) / quizSteps.length) * 100}%`;
+    return;
+  }
+  quizCategory = quizAnswers[2];
+  const names = { tops: 'Your layers edit', bottoms: 'Your movement edit', accessories: 'Your finishing edit' };
+  const copies = { tops: 'Soft shirts and easy layers to build the rest of your week around.', bottoms: 'Relaxed trousers and considered shapes with room to move.', accessories: 'The small pieces that make an everyday look feel complete.' };
+  document.querySelector('#quizResultTitle').textContent = names[quizCategory];
+  document.querySelector('#quizResultCopy').textContent = copies[quizCategory];
+  quizResult.classList.add('active');
+  quizProgress.style.width = '100%';
+}));
+document.querySelector('#quizShop').addEventListener('click', () => {
+  savedOnly = false;
+  activeFilter = quizCategory;
+  savedToggle.classList.remove('active');
+  document.querySelectorAll('.filter:not(.saved-filter)').forEach(item => item.classList.toggle('active', item.dataset.filter === quizCategory));
+  visibleCount = 12;
+  renderCatalog();
+  document.querySelector('#shop').scrollIntoView({ behavior: 'smooth' });
+});
+const refreshCatalogCount = () => {
+  const matchingProducts = curatedProducts.filter(product => {
+    const matchesFilter = activeFilter === 'all' || product.category.includes(activeFilter);
+    const haystack = `${product.name} ${product.category} ${product.detail}`.toLowerCase();
+    const matchesSearch = !searchTerm || haystack.includes(searchTerm);
+    const matchesSaved = !savedOnly || savedIds.has(product.id);
+    return matchesFilter && matchesSearch && matchesSaved;
+  });
+  const displayed = matchingProducts.slice(0, visibleCount);
+  const totalMatches = matchingProducts.length;
+  const searchValue = siteSearch ? siteSearch.value : '';
+  document.querySelector('#resultCount').textContent = `${String(totalMatches).padStart(2, '0')} pieces`;
+  savedToggle.querySelector('b').textContent = savedIds.size;
+  document.querySelector('#searchStatus').textContent = searchTerm
+    ? `${totalMatches} ${totalMatches === 1 ? 'piece' : 'pieces'} matching “${searchValue}”`
+    : `${totalMatches} pieces in the collection`;
+  seeMoreButton.disabled = displayed.length >= totalMatches || totalMatches === 0;
+  seeMoreButton.textContent = displayed.length >= totalMatches ? 'No more products' : 'See more products';
+  return { matchingProducts, displayed };
+};
+document.querySelector('.add-modal').addEventListener('click', () => { cart.push({name:modal.dataset.name,price:modal.dataset.price,image:modal.dataset.image,size:document.querySelector('#modalSize').value}); updateBag(); modal.classList.remove('open'); document.querySelector('#toast').classList.add('show'); setTimeout(() => document.querySelector('#toast').classList.remove('show'), 2200); });
+document.querySelector('#modalClose').onclick = () => modal.classList.remove('open'); document.querySelector('#bagOpen').onclick = () => bag.classList.add('open'); document.querySelector('#bagClose').onclick = () => bag.classList.remove('open'); document.querySelector('#menuToggle').onclick = () => document.querySelector('#mainNav').classList.toggle('open');
+const searchPanel = document.querySelector('#searchPanel'); const siteSearch = document.querySelector('#siteSearch');
+const applySearch = () => {
+  searchTerm = siteSearch.value.trim().toLowerCase();
+  visibleCount = 8;
+  renderCatalog();
+};
+document.querySelector('#searchToggle').onclick = () => { searchPanel.classList.add('open'); searchPanel.setAttribute('aria-hidden', 'false'); siteSearch.focus(); };
+document.querySelector('#searchClose').onclick = () => { searchPanel.classList.remove('open'); searchPanel.setAttribute('aria-hidden', 'true'); siteSearch.value = ''; searchTerm = ''; visibleCount = 8; renderCatalog(); };
+siteSearch.addEventListener('input', applySearch);
+document.querySelector('#cartItems').addEventListener('click', event => { if (event.target.dataset.remove !== undefined) { cart.splice(Number(event.target.dataset.remove), 1); updateBag(); } });
+document.querySelector('#checkout').onclick = () => { if (!cart.length) return; const order = cart.map(item => `${item.name} (${item.size}) - ${money(item.price)}`).join(', '); window.open(`https://wa.me/2349114362935?text=Hi%20sammy.com%2C%20I%20would%20like%20to%20order%3A%20${encodeURIComponent(order)}.%20Total%3A%20${encodeURIComponent(document.querySelector('#cartTotal').textContent)}`, '_blank'); };
+const promoCountdown = document.querySelector('#promoCountdown');
+if (promoCountdown) {
+  const countdownTarget = Date.now() + (48 * 60 * 60 * 1000);
+  const updateCountdown = () => {
+    const remaining = Math.max(countdownTarget - Date.now(), 0);
+    const hours = Math.floor(remaining / (1000 * 60 * 60));
+    const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+    promoCountdown.textContent = `${String(hours).padStart(2,'0')}h ${String(minutes).padStart(2,'0')}m`;
+    if (remaining === 0) promoCountdown.textContent = '00h 00m';
+  };
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+const promoReel = document.querySelector('#promoReel');
+const promoFrames = promoReel ? [...promoReel.querySelectorAll('.reel-frame')] : [];
+const promoPlay = document.querySelector('#promoPlay');
+const reelProgress = document.querySelector('#reelProgress');
+const reelTime = document.querySelector('#reelTime');
+let promoFrameIndex = 0;
+let promoPlaying = true;
+let promoProgress = 0;
+const showPromoFrame = index => {
+  promoFrames.forEach((frame, frameIndex) => frame.classList.toggle('active', frameIndex === index));
+  if (reelTime) reelTime.textContent = `${String(index + 1).padStart(2, '0')} / ${String(promoFrames.length).padStart(2, '0')}`;
+};
+const advancePromo = () => {
+  if (!promoPlaying || !promoFrames.length) return;
+  promoProgress += 100 / 50;
+  if (reelProgress) reelProgress.style.width = `${promoProgress}%`;
+  if (promoProgress >= 100) {
+    promoProgress = 0;
+    promoFrameIndex = (promoFrameIndex + 1) % promoFrames.length;
+    showPromoFrame(promoFrameIndex);
+  }
+};
+setInterval(advancePromo, 100);
+promoPlay?.addEventListener('click', () => {
+  promoPlaying = !promoPlaying;
+  promoPlay.textContent = promoPlaying ? 'Ⅱ' : '▶';
+  promoPlay.setAttribute('aria-label', promoPlaying ? 'Pause store advertisement' : 'Play store advertisement');
+});
+const interruptReelImage = document.querySelector('#interruptReelImage');
+const interruptReelScene = document.querySelector('#interruptReelScene');
+const interruptScenes = [
+  { image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85', label: 'Scene 01 / The arrival' },
+  { image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85', label: 'Scene 02 / The detail' },
+  { image: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=900&q=85', label: 'Scene 03 / The edit' }
+];
+let interruptSceneIndex = 0;
+setInterval(() => {
+  if (!interruptAd?.classList.contains('show')) return;
+  interruptSceneIndex = (interruptSceneIndex + 1) % interruptScenes.length;
+  interruptReelImage.src = interruptScenes[interruptSceneIndex].image;
+  interruptReelScene.textContent = interruptScenes[interruptSceneIndex].label;
+}, 2600);
+const interruptAd = document.getElementById('interruptAd');
+const interruptClose = document.getElementById('interruptClose');
+const interruptDismiss = document.getElementById('interruptDismiss');
+const interruptSpin = document.getElementById('interruptSpin');
+const copyOpay = document.getElementById('copyOpay');
+const showInterruptAd = () => {
+  if (!interruptAd) return;
+  interruptAd.classList.add('show');
+};
+const hideInterruptAd = () => {
+  if (!interruptAd) return;
+  interruptAd.classList.remove('show');
+};
+setTimeout(showInterruptAd, 6000);
+setInterval(() => {
+  if (!document.hidden) {
+    showInterruptAd();
+  }
+}, 30000);
+interruptClose?.addEventListener('click', hideInterruptAd);
+interruptDismiss?.addEventListener('click', hideInterruptAd);
+interruptSpin?.addEventListener('click', () => {
+  const offers = ['Welcome offer: 15% off', 'Your private edit: free styling help', 'Member preview: early drop access'];
+  interruptSpin.disabled = true;
+  interruptSpin.textContent = 'Revealing...';
+  let offerIndex = 0;
+  const offerTimer = setInterval(() => {
+    interruptSpin.textContent = offers[offerIndex];
+    offerIndex += 1;
+    if (offerIndex === offers.length) {
+      clearInterval(offerTimer);
+      setTimeout(() => { interruptSpin.disabled = false; interruptSpin.textContent = 'Claim your welcome offer'; }, 1400);
+    }
+  }, 450);
+});
+const vipTab = document.createElement('button');
+vipTab.className = 'vip-tab';
+vipTab.type = 'button';
+vipTab.innerHTML = '<span>VIP</span> Member Pass';
+vipTab.addEventListener('click', showInterruptAd);
+document.body.append(vipTab);
+let exitOfferShown = false;
+document.addEventListener('mouseout', event => {
+  if (!exitOfferShown && event.clientY <= 8 && event.relatedTarget === null) {
+    exitOfferShown = true;
+    showInterruptAd();
+  }
+});
+copyOpay?.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(document.getElementById('opayAccount').textContent.trim());
+    copyOpay.textContent = 'Account copied';
+    setTimeout(() => { copyOpay.textContent = 'Copy account'; }, 1800);
+  } catch (error) {
+    copyOpay.textContent = 'Copy unavailable';
+  }
+});
+seeMoreButton.addEventListener('click', () => {
+  visibleCount += 8;
+  renderCatalog();
+});
+document.querySelectorAll('.filter:not(.saved-filter)').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  activeFilter = button.dataset.filter;
+  visibleCount = 8;
+  renderCatalog();
+}));
+savedToggle.addEventListener('click', () => {
+  savedOnly = !savedOnly;
+  savedToggle.classList.toggle('active', savedOnly);
+  visibleCount = 12;
+  renderCatalog();
+});
+</script>
+<script>
+const lookbook = document.createElement('section'); lookbook.className='lookbook'; lookbook.innerHTML='<div class="container"><p class="eyebrow">The visual edit</p><div class="lookbook-grid"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Layered neutral fashion look"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Fashion store styling rack"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85" alt="Woman wearing a bright fashion look"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85" alt="Minimal clothing detail"></div></div>'; document.querySelector('#shop').after(lookbook);
+const techGalleryImages = [
+  'photo-1496181133206-80ce9b88a853',
+  'photo-1511379938547-c1f69419868d',
+  'photo-1523275335684-37898b6baf30',
+  'photo-1546435770-a3e426bf472b'
+];
+const kidsLibrary=document.createElement('section'); kidsLibrary.className='kids-library'; kidsLibrary.innerHTML='<div class="container"><div class="kids-library-head"><div><p class="eyebrow">Tech / the studio edit</p><h2>Built for<br><em>daily flow.</em></h2><p>Four essentials designed to keep your work, movement, and moments beautifully connected.</p></div><span class="library-count">04 highlights / 01 edit</span></div><div class="kids-gallery"></div></div>'; document.querySelector('#shop').after(kidsLibrary);
+const kidsGallery=kidsLibrary.querySelector('.kids-gallery'); techGalleryImages.forEach((image,index)=>{const item=document.createElement('figure');item.innerHTML=`<img src="https://images.unsplash.com/${image}?auto=format&fit=crop&w=600&q=75&library=${index}" alt="Device showcase ${index+1}" loading="lazy"><figcaption>${String(index+1).padStart(2,'0')} / studio tech</figcaption>`;kidsGallery.append(item)});
+const delivery=document.createElement('section'); delivery.className='delivery-section'; delivery.innerHTML='<div class="container"><div class="delivery-head"><div><p class="eyebrow">Delivery, made clear</p><h2>From our rail<br><em>to your door.</em></h2></div><p>We keep the last part of your order as considered as the first. Choose a route, then follow the little details.</p></div><div class="delivery-grid"><article><span>01</span><h3>Lagos express</h3><p>1-2 business days</p><small>Free on orders over N150,000</small></article><article><span>02</span><h3>Nationwide</h3><p>2-5 business days</p><small>We confirm the exact fee before dispatch</small></article><article><span>03</span><h3>Studio pickup</h3><p>Ready when you are</p><small>Choose pickup when we confirm your order</small></article></div><div class="delivery-promises"><div><b>Carefully packed</b><span>Every order is checked and wrapped before it leaves the studio.</span></div><div><b>Clear updates</b><span>We send your delivery details as soon as your order moves.</span></div><div><b>Need help?</b><span>Message the studio on WhatsApp for sizing or delivery questions.</span></div></div><div class="delivery-steps"><span class="active"><b>01</b>Order confirmed</span><i></i><span><b>02</b>Prepared with care</span><i></i><span><b>03</b>On its way</span></div><div class="tracking-box"><div><b>Already ordered?</b><span>Enter your order code and we will find the next update.</span></div><div class="tracking-form"><input id="trackingCode" placeholder="e.g. SM-4A91C2"><button id="trackOrder" type="button">Track order →</button></div><p id="trackingResult" role="status"></p></div></div></section>'; kidsLibrary.after(delivery);
+document.querySelector('#trackOrder').addEventListener('click',async()=>{const code=document.querySelector('#trackingCode').value.trim();const result=document.querySelector('#trackingResult');if(!code){result.textContent='Enter your order code first.';return;}result.textContent='Checking your order...';try{const response=await fetch(`/api/orders/${encodeURIComponent(code)}`);if(!response.ok)throw new Error();const {order}=await response.json();const labels={'awaiting-payment':'Awaiting payment','processing':'Being prepared','shipped':'Shipped','out-for-delivery':'Out for delivery','delivered':'Delivered'};result.textContent=`${order.id}: ${labels[order.status]||order.status}. Last updated ${new Date(order.updatedAt||order.createdAt).toLocaleString()}.`;}catch(error){result.textContent='We could not find that order code. Check it and try again.';}});
+const curatedProducts = [
+  { id: '1', category: 'new tops', className: 'New in', name: 'The Air Shirt', detail: 'Organic cotton · Chalk', price: 40000, image: 'https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85' },
+  { id: '2', category: 'new tops', className: 'New in', name: 'The Studio Overshirt', detail: 'Textured cotton · Rust', price: 48000, image: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=900&q=85' },
+  { id: '3', category: 'tops', className: 'Tops', name: 'The Daily Tee', detail: 'Heavyweight jersey · White', price: 22000, image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85' },
+  { id: '4', category: 'tops', className: 'Tops', name: 'The Ribbed Polo', detail: 'Soft knit jersey · Ecru', price: 39000, image: 'https://images.unsplash.com/photo-1625910513413-5fc45d94c92f?auto=format&fit=crop&w=900&q=85' },
+  { id: '5', category: 'tops', className: 'Tops', name: 'The Cloud Knit', detail: 'Cotton blend · Oat', price: 36000, image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=85' },
+  { id: '6', category: 'tops', className: 'Tops', name: 'The Soft Oxford', detail: 'Cotton poplin · Sky', price: 42000, image: 'https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85' },
+  { id: '7', category: 'bottoms', className: 'Bottoms', name: 'The Pleat Short', detail: 'Cotton twill · Sand', price: 33000, image: 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=900&q=85' },
+  { id: '8', category: 'bottoms', className: 'Bottoms', name: 'The Everyday Trouser', detail: 'Relaxed cotton · Charcoal', price: 52000, image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85' },
+  { id: '9', category: 'bottoms', className: 'Bottoms', name: 'The Soft Chino', detail: 'Cotton twill · Stone', price: 47000, image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85' },
+  { id: '10', category: 'bottoms', className: 'Bottoms', name: 'The Wide Trouser', detail: 'Cotton blend · Stone', price: 58000, image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85' },
+  { id: '11', category: 'accessories', className: 'Object', name: 'The Carry Tote', detail: 'Vegetable leather · Tan', price: 28000, image: 'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=900&q=85' },
+  { id: '12', category: 'accessories', className: 'Object', name: 'The Frame One', detail: 'Acetate · Smoke', price: 18000, image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85' },
+  { id: '13', category: 'accessories', className: 'Object', name: 'The Weekender Pouch', detail: 'Utility cotton · Olive', price: 22000, image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85' },
+  { id: '14', category: 'accessories', className: 'Object', name: 'The Travel Tote', detail: 'Canvas · Natural', price: 25000, image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85' },
+  { id: '15', category: 'accessories', className: 'Object', name: 'The City Belt', detail: 'Leather · Black', price: 24000, image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=85' },
+  { id: '16', category: 'tech', className: 'Tech', name: 'Studio Laptop 14', detail: 'M2 / 14-inch · Silver', price: 1650000, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85' },
+  { id: '17', category: 'tech', className: 'Tech', name: 'Pulse Earbuds Pro', detail: 'Noise cancelling · Black', price: 95000, image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85' },
+  { id: '18', category: 'tech', className: 'Tech', name: 'Arc Smart Watch', detail: 'GPS / Health tracking · Space Gray', price: 280000, image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85' },
+  { id: '19', category: 'tech', className: 'Tech', name: 'Dock Charge Hub', detail: '4-port fast charge · White', price: 65000, image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=85' },
+  { id: '20', category: 'tech', className: 'Tech', name: 'QuietLoop Max', detail: 'Over-ear ANC · Black', price: 265000, image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85' },
+  { id: '21', category: 'tech', className: 'Tech', name: 'Focus Touchpad', detail: 'Portable touchpad · Silver', price: 64000, image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85' },
+  { id: '22', category: 'tech', className: 'Tech', name: 'Travel Power Bank', detail: '20,000 mAh · Navy', price: 72000, image: 'https://images.unsplash.com/photo-1609592424841-8b47e7bbf3b5?auto=format&fit=crop&w=900&q=85' },
+  { id: '23', category: 'new tops', className: 'New in', name: 'The Weekend Button-Up', detail: 'Linen blend · Sand', price: 43000, image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85' },
+  { id: '24', category: 'new tops', className: 'New in', name: 'The Easy Knit', detail: 'Relaxed jersey · Clay', price: 37000, image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85' },
+  { id: '25', category: 'tops', className: 'Tops', name: 'The Linen Layer', detail: 'Linen blend · Dust blue', price: 41000, image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85' },
+  { id: '26', category: 'tops', className: 'Tops', name: 'The Knit Sleeve', detail: 'Fine knit · Sandstone', price: 45000, image: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=900&q=85' },
+  { id: '27', category: 'bottoms', className: 'Bottoms', name: 'The Utility Pant', detail: 'Cotton twill · Moss', price: 51000, image: 'https://images.unsplash.com/photo-1552902865-b72c8b6d4f13?auto=format&fit=crop&w=900&q=85' },
+  { id: '28', category: 'bottoms', className: 'Bottoms', name: 'The Straight Leg', detail: 'Relaxed fit · Coffee', price: 54000, image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85' },
+  { id: '29', category: 'accessories', className: 'Object', name: 'The Leather Mini', detail: 'Compact leather · Walnut', price: 31000, image: 'https://images.unsplash.com/photo-1591561954557-26941169b210?auto=format&fit=crop&w=900&q=85' },
+  { id: '30', category: 'accessories', className: 'Object', name: 'The Everyday Sling', detail: 'Canvas · Stone', price: 26000, image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85' },
+  { id: '31', category: 'tech', className: 'Tech', name: 'The Pocket Speaker', detail: 'Portable audio · Slate', price: 89000, image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=85' },
+  { id: '32', category: 'tech', className: 'Tech', name: 'The Desk Screen', detail: 'USB-C display · Warm white', price: 290000, image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85' },
+  { id: '33', category: 'tech', className: 'Tech', name: 'The Slate Tablet', detail: '11-inch display · Silver', price: 420000, image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=85' },
+  { id: '34', category: 'tech', className: 'Tech', name: 'The Frame Camera', detail: 'Mirrorless body · Black', price: 680000, image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85' },
+  { id: '35', category: 'tech', className: 'Tech', name: 'The Studio Keys', detail: 'Mechanical keyboard · White', price: 78000, image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85' },
+  { id: '36', category: 'tech', className: 'Tech', name: 'The Play Controller', detail: 'Wireless controller · Blue', price: 115000, image: 'https://images.unsplash.com/photo-1605901309584-37b60e4a3d0a?auto=format&fit=crop&w=900&q=85' },
+  { id: '37', category: 'tech', className: 'Tech', name: 'The Pocket Phone', detail: '5G / 256GB · Graphite', price: 510000, image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85' },
+  { id: '38', category: 'tech', className: 'Tech', name: 'The Air Buds', detail: 'Wireless audio · White', price: 85000, image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=85' }
+];
+
+const refreshRecommendations = () => {
+  const existing = document.querySelector('.recommendation-strip');
+  if (!savedIds.size) { existing?.remove(); return; }
+  const anchor = curatedProducts.find(product => savedIds.has(product.id));
+  if (!anchor) return;
+  const recommendations = curatedProducts.filter(product => product.category === anchor.category && !savedIds.has(product.id)).slice(0, 3);
+  if (!recommendations.length) return;
+  const section = existing || document.createElement('section');
+  section.className = 'recommendation-strip';
+  section.innerHTML = `<div class="container"><div class="recommendation-head"><div><p class="eyebrow">Picked for your edit</p><h2>Because you saved <em>${anchor.name}.</em></h2></div><span>Personal recommendations</span></div><div class="recommendation-grid">${recommendations.map(item => `<article><img src="${item.image}" alt="${item.name}" loading="lazy"><div><b>${item.name}</b><span>${item.detail}</span><strong>N${item.price.toLocaleString('en-NG')}</strong></div></article>`).join('')}</div></div>`;
+  if (!existing) document.querySelector('#shop').after(section);
+};
+const renderCatalog = () => {
+  const grid = document.querySelector('#productGrid');
+  grid.innerHTML = '';
+
+  const { displayed } = refreshCatalogCount();
+  displayed.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'product';
+    card.dataset.category = item.category;
+    card.dataset.id = item.id;
+    card.dataset.name = item.name;
+    card.dataset.price = String(item.price);
+    card.dataset.image = item.image;
+    card.innerHTML = `
+      <div class="product-image">
+        <img src="${item.image}" alt="${item.name}" loading="lazy">
+        <span class="product-tag">${item.className}</span>
+        <button class="favorite-toggle${savedIds.has(item.id) ? ' saved' : ''}" type="button" aria-label="${savedIds.has(item.id) ? 'Remove' : 'Save'} ${item.name}">${savedIds.has(item.id) ? '♥' : '♡'}</button>
+        <button class="quick-view">Quick view</button>
+      </div>
+      <div class="product-info">
+        <div>
+          <h3>${item.name}</h3>
+          <p>${item.detail}</p>
+        </div>
+        <strong>N${item.price.toLocaleString('en-NG')}</strong>
+      </div>
+    `;
+    grid.append(card);
+    card.querySelector('.favorite-toggle').addEventListener('click', event => {
+      event.stopPropagation();
+      if (savedIds.has(item.id)) savedIds.delete(item.id); else savedIds.add(item.id);
+      localStorage.setItem('sammySavedProducts', JSON.stringify([...savedIds]));
+      renderCatalog();
+      refreshRecommendations();
+    });
+
+    card.addEventListener('click', event => {
+      if (event.target.classList.contains('quick-view') || event.currentTarget) showProduct(card);
+    });
+  });
+
+  document.querySelectorAll('.product').forEach(product => {
+    const badge = document.createElement('span');
+    badge.className = 'discount-badge';
+    badge.textContent = '15% off first order';
+    product.querySelector('.product-image').append(badge);
+  });
+};
+renderCatalog();
+refreshRecommendations();
+
+const fallbackImages = {
+  tech: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=8',
+  tops: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85',
+  bottoms: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85',
+  accessories: 'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=900&q=85',
+  'new tops': 'https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85'
+};
+const getFallbackImage = category => {
+  const key = Object.keys(fallbackImages).find(item => category.includes(item));
+  return fallbackImages[key] || fallbackImages.accessories;
+};
+document.querySelectorAll('img').forEach(image => {
+  image.addEventListener('error', () => {
+    if (image.dataset.fallbackApplied) return;
+    image.dataset.fallbackApplied = 'true';
+    image.src = getFallbackImage(image.closest('.product')?.dataset.category || 'accessories');
+  });
+});
+
+const collectionCount = getProducts().length;
+document.querySelector('#resultCount').textContent = `${String(collectionCount).padStart(2, '0')} pieces`;
+document.querySelector('#searchStatus').textContent = `${collectionCount} pieces in the collection`;
+</script>
+</body>
+</html>
